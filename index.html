@@ -15,7 +15,7 @@
 </head>
 
 <body class="page-body">
-    <header class="main=header">
+    <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo/logo.svg" width="140" height="70" alt="Логотип Sedona">
@@ -26,33 +26,38 @@
                 <li><a href="index.html">карта штата</a></li>
                 <li><a href="catalog.html">гостиница</a></li>
             </ul>
+
         </nav>
     </header>
 
     <main class="container">
         <section class="title">
             <img src="https://via.placeholder.com/150x100" width="1200" height="510" alt="Картинка Sedona">
-            <h1>
-                седона - небольшой городок в Аризоне,<br> заслуживающий большего!
-            </h1>
-            <p class="text">
-                рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-            </p>
+            <div class="text-wrapper">
+                <h1>
+                    седона - небольшой городок в Аризоне,<br> заслуживающий большего!
+                </h1>
+                <p class="text">
+                    рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+                </p>
+            </div>
         </section>
         <section class="features-1">
-            <h2>
-                настоящий<br> городок
-            </h2>
-            <p class="text">
-                - №1 -
-            </p>
-            <p class="text">
-                седона - не атрикцион для туристов, там<br> течет своя жизнь
-            </p>
+            <div class="point">
+                <h2>
+                    настоящий<br> городок
+                </h2>
+                <p class="text">
+                    - №1 -
+                </p>
+                <p class="text">
+                    седона - не атрикцион для туристов, там<br> течет своя жизнь
+                </p>
+            </div>
             <img src="img/hotel_sedona.png" width="800" height="255" alt="гостиница sedona">
         </section>
         <section>
-            <article>
+            <article class="content-wrapper">
                 <ul class="features-list">
                     <li class="features-item">
                         <img src="img/icon/home.svg" alt="иконка дома">
@@ -76,15 +81,17 @@
             </article>
             <article class="features-2">
                 <img src="img/canyon.png" width="800" height="255" alt="Картинка каньона">
-                <h2>
-                    там есть<br> мост дьявола
-                </h2>
-                <p class="text">
-                    - №2 -
-                </p>
-                <p class="text">
-                    да, по нему можно пройти! если конечно<br> вы осмелитесь
-                </p>
+                <div class="point">
+                    <h2>
+                        там есть<br> мост дьявола
+                    </h2>
+                    <p class="text">
+                        - №2 -
+                    </p>
+                    <p class="text">
+                        да, по нему можно пройти! если конечно<br> вы осмелитесь
+                    </p>
+                </div>
             </article>
             <article>
                 <ul class="features-list">
@@ -116,67 +123,72 @@
             </article>
         </section>
         <section class="subtitle">
-            <h2>заинтересовались?</h2>
-            <p class="text">укажите предпологаемые даты поездки,<br> и мы скажем лучшие предложения гостиниц в седоне
-            </p>
-
+            <div class="subtitle-text">
+                <h2>заинтересовались?</h2>
+                <p class="text">укажите предпологаемые даты поездки,<br> и мы скажем лучшие предложения гостиниц в седоне
+                </p>
+            </div>
             <button class="button-modal-list" type="button">Поиск гостиницы в седоне</button>
             <!--Форма выпадающего списка, обозначена после тега footer-->
         </section>
     </main>
 
     <footer class="main-footer">
-        <section class="contacts">
-            <img src="img/map.png" width="1200" height="595" alt="карта местонахождения гостиницы">
-            <h3>контакты</h3>
-            <p>
-                <a href="index.html">#visitsedona</a>
-                <a href="tel:+74956660166">Тел: +7 (495) 666-01-66</a>
-            </p>
-        </section>
-        <section class="socials">
-            <h3>Соц.сети</h3>
-            <ul class="social-list">
-                <li class="social-item">
-                    <a href="#">
-                        <img src="img/icon/twitter.svg" alt="иконка twitter">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="#">
-                        <img src="img/icon/fb-icon.svg" alt="иконка Facebook">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="#">
-                        <img src="img/icon/youtube.svg" alt="иконка Youtube">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="copyright">
-            <h3>Разработчик</h3>
-            <p>
-                website by
-                <a href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="img/icon/logo-htmlacademy.svg" alt="иконка html-academy">
-                </a>
-            </p>
+        <section>
+            <img src="img/map.png" width="1200 " height="595 " alt="карта местонахождения гостиницы ">
+            <div class="footer-wrapper">
+                <section class="contacts">
+                    <h3>контакты</h3>
+                    <p>
+                        <a href="index.html ">#visitsedona</a><br>
+                        <a href="tel:+74956660166 ">Тел: +7 (495) 666-01-66</a>
+                    </p>
+                </section>
+                <section class="socials ">
+                    <h3>Соц.сети</h3>
+                    <ul class="social-list ">
+                        <li class="social-item ">
+                            <a href="# ">
+                                <img src="img/icon/twitter.svg " alt="иконка twitter ">
+                            </a>
+                        </li>
+                        <li class="social-item ">
+                            <a href="# ">
+                                <img src="img/icon/fb-icon.svg " alt="иконка Facebook ">
+                            </a>
+                        </li>
+                        <li class="social-item ">
+                            <a href="# ">
+                                <img src="img/icon/youtube.svg " alt="иконка Youtube ">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="copyright ">
+                    <h3>Разработчик</h3>
+                    <p>
+                        website by
+                        <a href="https://htmlacademy.ru/intensive/htmlcss ">
+                            <img src="img/icon/logo-htmlacademy.svg " alt="иконка html-academy ">
+                        </a>
+                    </p>
+                </section>
+            </div>
         </section>
     </footer>
-    <section class="modal">
-        <form action="#" method="POST">
-            <label for="data-visit">Дата заезда:</label>
-            <input type="date" name="data" id="data-visit">
-            <label for="data-exit">Дата выезда:</label>
-            <input type="date" name="data" id="data-exit">
+    <section class="modal ">
+        <form action="# " method="POST ">
+            <label for="data-visit ">Дата заезда:</label>
+            <input type="date " name="data " id="data-visit ">
+            <label for="data-exit ">Дата выезда:</label>
+            <input type="date " name="data " id="data-exit ">
 
-            <label for="big">Взрослые:</label>
-            <input type="number" name="big" id="big">
-            <label for="small">Дети:</label>
-            <input type="number" name="small" id="small">
+            <label for="big ">Взрослые:</label>
+            <input type="number " name="big " id="big ">
+            <label for="small ">Дети:</label>
+            <input type="number " name="small " id="small ">
 
-            <input class="button-modal" type="button" value="Найти">
+            <input class="button-modal " type="button " value="Найти ">
         </form>
     </section>
 

@@ -31,25 +31,28 @@
 
     <main>
         <section class="filter">
-            <h2>фильтр</h2>
-            <form action="" method="post">
-                <fieldset>
-                    <legend class="inner-h2">Инфраструктура:</legend>
-                    <ul class="filter-list">
-                        <li class="filter-item">
-                            <input type="checkbox" name="pool" id="pool" checked>
-                            <label for="pool">бассейн</label>
-                        </li>
-                        <li class="filter-item">
-                            <input type="checkbox" name="parking" id="parking">
-                            <label for="parking">парковка</label>
-                        </li>
-                        <li class="filter-item">
-                            <input type="checkbox" name="wifi" id="wifi">
-                            <label for="wifi">wi-fi</label>
-                        </li>
-                    </ul>
-                </fieldset>
+            <div class="services">
+                <h2 class="display-none">фильтр</h2>
+                <form action="" method="post">
+                    <fieldset>
+                        <legend class="inner-h2">Инфраструктура:</legend>
+                        <ul class="filter-list">
+                            <li class="filter-item">
+                                <input type="checkbox" name="pool" id="pool" checked>
+                                <label for="pool">бассейн</label>
+                            </li>
+                            <li class="filter-item">
+                                <input type="checkbox" name="parking" id="parking">
+                                <label for="parking">парковка</label>
+                            </li>
+                            <li class="filter-item">
+                                <input type="checkbox" name="wifi" id="wifi">
+                                <label for="wifi">wi-fi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+            </div>
+            <div class="list-hotel">
                 <fieldset>
                     <legend class="inner-h2">тип жилья:</legend>
                     <ul class="filter-list">
@@ -67,13 +70,16 @@
                         </li>
                     </ul>
                 </fieldset>
+            </div>
+            <div class="price">
                 <h2 class="inner-h2">
                     стоимость в сутки (Р):
                 </h2>
                 <label for="price"><p class="text">от 0 до 3000</p></label>
                 <input type="range" name="price" id="price" min="0" max="3000">
-            </form>
-            <button class="inner_button_filter" type="button">показать</button>
+                </form>
+                <button class="inner_button_filter" type="button">показать</button>
+            </div>
         </section>
         <section>
             <p class="results">найдено: 3</p>
@@ -90,9 +96,9 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="position-catalog">
             <ul class="inner-features-list">
-                <li>
+                <li class=inner-features-item>
                     <a href="#">
                         <img src="img/AMARA_RESORT_&_SPA.png" width="135" height="90" alt="гостиница AMARA RESORT & SPA">
                         <h3 class="name-content">AMARA RESORT & SPA</h3>
@@ -127,41 +133,45 @@
     </main>
 
     <footer class="main-footer">
-        <section class="contacts">
-            <h3>контакты</h3>
-            <p>
-                <a href="index.html">#visitsedona</a>
-                <a href="tel:+74956660166">Тел: +7 (495) 666-01-66</a>
-            </p>
-        </section>
-        <section class="socials">
-            <h3>Соц.сети</h3>
-            <ul class="social-list">
-                <li class="social-item">
-                    <a href="#">
-                        <img src="img/icon/twitter.svg" alt="иконка twitter">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="#">
-                        <img src="img/icon/fb-icon.svg" alt="иконка Facebook">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="#">
-                        <img src="img/icon/youtube.svg" alt="иконка Youtube">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="copyright">
-            <h3>Разработчик</h3>
-            <p>
-                website by
-                <a href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="img/icon/logo-htmlacademy.svg" alt="иконка html-academy">
-                </a>
-            </p>
+        <section>
+            <div class="footer-wrapper">
+                <section class="contacts">
+                    <h3>контакты</h3>
+                    <p>
+                        <a href="index.html ">#visitsedona</a><br>
+                        <a href="tel:+74956660166 ">Тел: +7 (495) 666-01-66</a>
+                    </p>
+                </section>
+                <section class="socials ">
+                    <h3>Соц.сети</h3>
+                    <ul class="social-list ">
+                        <li class="social-item ">
+                            <a href="# ">
+                                <img src="img/icon/twitter.svg " alt="иконка twitter ">
+                            </a>
+                        </li>
+                        <li class="social-item ">
+                            <a href="# ">
+                                <img src="img/icon/fb-icon.svg " alt="иконка Facebook ">
+                            </a>
+                        </li>
+                        <li class="social-item ">
+                            <a href="# ">
+                                <img src="img/icon/youtube.svg " alt="иконка Youtube ">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="copyright ">
+                    <h3>Разработчик</h3>
+                    <p>
+                        website by
+                        <a href="https://htmlacademy.ru/intensive/htmlcss ">
+                            <img src="img/icon/logo-htmlacademy.svg " alt="иконка html-academy ">
+                        </a>
+                    </p>
+                </section>
+            </div>
         </section>
     </footer>
 </body>
