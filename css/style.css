@@ -276,9 +276,10 @@
 }
 
 .social-item {
-  position: relative;
   display: flex;
-  width: 46px;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
   height: 48px;
   margin: 0 3px;
   cursor: pointer;
@@ -289,30 +290,22 @@
   background-color: var(--special-middle-blue);
 }
 
-.social-item:active {
+.social-item:active path {
   background-color: var(--special-dark-blue);
-  opacity: 0.3;
-}
-
-.social-tw {
-  position: absolute;
-  left: 15px;
-  top: 14px;
-}
-.social-fb {
-  position: absolute;
-  left: 17px;
-  top: 12px;
-}
-.social-yt {
-  position: absolute;
-  left: 12px;
-  top: 15px;
+  fill: #ffffff5e;
 }
 
 .copyright {
   display: flex;
   margin-right: 65px;
+}
+
+.copy-logo path:hover {
+  fill: var(--basic-skyblue);
+}
+
+.copy-logo path:active {
+  fill: #b3b3b3;
 }
 /* modal window */
 
@@ -537,6 +530,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  text-transform: uppercase;
   margin-top: 20px;
 }
 
@@ -757,6 +751,7 @@
   margin-bottom: 0px;
   width: 400px;
   color: var(--basic-black);
+  cursor: pointer;
 }
 
 .worth {
